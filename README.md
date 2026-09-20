@@ -67,7 +67,7 @@ Two constants at the top of `src/App.jsx` control the mode:
 
 | Constant | Default | Meaning |
 | --- | --- | --- |
-| `PUBLIC_API_URL` | `""` | Your API Gateway invoke URL. Leave it empty to run with the built-in analyzer only. Set it to enable the Cloud AI switch. |
+| `PUBLIC_API_URL` | `""` | Your API Gateway invoke URL. |
 | `SELF_HOST` | `false` | Set to `true` to show an API URL field in the header, so each visitor can enter their own endpoint. |
 
 The endpoint URL is not a secret and will be visible in the browser, so protect the backend with server-side limits. See the Self-Host Guide tab in the app.
