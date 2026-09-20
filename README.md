@@ -10,6 +10,7 @@ Built for the **AWS Bharat Builds Tour: First Commit** hackathon (Track 1, Ship 
 
 **Deployed Link:** https://main.d3so1bcas2zaov.amplifyapp.com/
 
+
 ## How It Works
 
 **1. Data Ingestion**
@@ -61,6 +62,7 @@ npm run dev
 The application will launch and typically be available at http://localhost:5173 or http://localhost:3000
 
 
+
 ## Configuration
 
 Two constants at the top of `src/App.jsx` control the mode:
@@ -72,6 +74,7 @@ Two constants at the top of `src/App.jsx` control the mode:
 
 The endpoint URL is not a secret and will be visible in the browser, so protect the backend with server-side limits. See the Self-Host Guide tab in the app.
 
+
 ## Deploy
 
 The repo includes `amplify.yml`. To deploy on AWS Amplify Hosting:
@@ -80,9 +83,17 @@ The repo includes `amplify.yml`. To deploy on AWS Amplify Hosting:
 2. In Amplify, choose **Host web app**, connect the repo, and keep the detected build settings.
 3. Deploy. The build runs `npm install` and `npm run build`, and publishes the `dist` folder.
 
+## Usage
+
+1.Navigate to the Audit Engine tab in the application.
+2.Select one of the Sample policies to populate the editor, or paste your own custom AWS IAM policy or CloudFormation template in valid JSON format.
+3.Click Run Analysis to send the configuration to the Bedrock backend.
+4.Review the generated risk assessment and expected severity rating (Critical, High, Medium, or Low).
+
 
 ## Privacy
 - Never paste access keys, secret keys, session tokens, or personal data.
+  
 
 ## Project structure
 
@@ -97,11 +108,13 @@ The repo includes `amplify.yml`. To deploy on AWS Amplify Hosting:
     └── App.jsx         # The whole app: UI, built-in analyzer, and Cloud AI client
 ```
 
-## Tech
+
+## Tech Stack
 
 React 18, Vite 5, and Tailwind CSS 3 (compiled at build time through PostCSS). No router and no icon libraries.
 Hosting: AWS Amplify (configured for continuous deployment)
-AI Backend: Amazon Bedrock (Claude 3 Haiku)
+AI Backend: **Amazon Bedrock (Claude 3 Haiku)**
+
 
 ## License
 
