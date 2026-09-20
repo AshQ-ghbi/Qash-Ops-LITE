@@ -16,7 +16,7 @@ const RISK_ORDER = ["LOW", "MEDIUM", "HIGH", "CRITICAL"];
 // This app is a public service: visitors never see or type an endpoint. Before you deploy, paste
 // your API Gateway invoke URL below (it is not a secret, the server-side limits protect it).
 // Only set SELF_HOST to true if you want the old "enter your own URL" field in the header.
-const PUBLIC_API_URL = "";
+const PUBLIC_API_URL = "https://dfp2dqiwm1.execute-api.us-east-1.amazonaws.com/audit";
 const SELF_HOST = false;
 const ENV_URL = PUBLIC_API_URL.trim();
 const PUBLIC_MODE = !SELF_HOST;
