@@ -112,7 +112,9 @@ The repo includes `amplify.yml`. To deploy on AWS Amplify Hosting:
 ## Tech Stack
 
 React 18, Vite 5, and Tailwind CSS 3 (compiled at build time through PostCSS). No router and no icon libraries.
+
 Hosting: AWS Amplify (configured for continuous deployment)
+
 AI Backend: **Amazon Bedrock (Claude 3 Haiku)**
 
 
