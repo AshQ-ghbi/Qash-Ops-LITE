@@ -39,8 +39,8 @@ cd qash-ops-lite
 Install dependencies:
 
 npm install
-# or if you use yarn:
-# yarn install
+
+# or yarn install
 
 
 Configure environment variables:
@@ -106,3 +106,5 @@ AI Backend: Amazon Bedrock (Claude 3 Haiku)
 ## License
 
 Apache-2.0. See [LICENSE](LICENSE).
+
+## © Ashish Kumar
